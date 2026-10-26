@@ -24,7 +24,7 @@ class MyHome extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: const Center(
-        child: Text('Fadhil Hidayattulloh'),
+        child: Text('Fadhil Hidayattulloh SE 2'),
       ),
     );
   }
