@@ -28,6 +28,13 @@ class MyHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Center(
+          child: Text('Dashboard Mahasiswa'),
+        ),
+        backgroundColor: Colors.blue,
+        foregroundColor: Colors.white,
+      ),
       body: const Center(
         child: Text('Fadhil Hidayattulloh SE 2'),
       ),
