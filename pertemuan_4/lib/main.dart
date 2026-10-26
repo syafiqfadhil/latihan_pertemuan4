@@ -13,13 +13,13 @@ class MyApp extends StatelessWidget {
       title: 'Aplikasi Mahasiswa', 
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark(),
-      home: const MyHome(),
+      home: const MyProfil(),
     );
   }
 }
 
-class MyHome extends StatelessWidget {
-  const MyHome({super.key});
+class MyProfil extends StatelessWidget {
+  const MyProfil({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +32,23 @@ class MyHome extends StatelessWidget {
         foregroundColor: Colors.white,
       ),
       body: const Center(
-        child: Text('Fadhil Hidayattulloh SE 2'),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              'Fadhil Hidayattulloh',
+              style: TextStyle(
+                color: Colors.white,
+              ),
+            ),
+            Text(
+              'INI HALAMAN PROFIL SAYA',
+              style: TextStyle(
+                color: Colors.amberAccent,
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
